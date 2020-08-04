@@ -1,5 +1,5 @@
 ## SLNAS implement with pytorch 
-Paper: Stage and Lite Search Technology in Convolutional Neural Network Architecture Search 
+Paper: Stage and Lite Search Technology in Convolutional Neural Network Architecture Search  
 Authors: Tsung-Yi Chen
 
 Includes code for search task and scratch .
