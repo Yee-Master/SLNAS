@@ -2,7 +2,7 @@
 Paper: Stage and Lite Search Technology in Convolutional Neural Network Architecture Search  
 Authors: Tsung-Yi Chen
 
-Includes code for search task and scratch .
+Includes code for search and scratch.
 
 
 ## experiment dataset
@@ -47,7 +47,12 @@ cmd>>python train_search_cifar.py    --save cifa10_searcher
                                      --blocks "[2,2]"
                                      --weight_decay 3e-4
 ```
+## TODO
 
+- [ ] Search without label 
+- [ ] Search for detection and Segmentation 
+- [ ] AutoAugment
+- [ ] decrease inference time and require samples
 
 ## Acknowledgements
 
