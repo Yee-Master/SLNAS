@@ -5,7 +5,7 @@ Authors: Tsung-Yi Chen
 Includes code for search and scratch.
 
 
-## experiment dataset
+## Experiment Dataset
 - CIFAR10 : https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf
 - AID :　https://captain-whu.github.io/AID/
 - NWPU-RESISC45　: https://arxiv.org/ftp/arxiv/papers/1703/1703.00121.pdf
@@ -14,6 +14,17 @@ Includes code for search and scratch.
 - MIT67 : http://people.csail.mit.edu/torralba/publications/indoor.pdf
 - PlantVillage : https://arxiv.org/ftp/arxiv/papers/1604/1604.03169.pdf
 
+## Data path 
+```
+../data
+  └── ../data/YOUR_IMAGE_DATASET
+      ├── ../data/YOUR_IMAGE_DATASET/train
+      │   ├── xxx.jpg
+      │   └── ...
+      └── ../data/YOUR_IMAGE_DATASET/val
+          ├── xxx.jpg
+          └── ...
+```
 
 ## Prerequisites
 
@@ -26,14 +37,14 @@ Includes code for search and scratch.
 Run  SLNAS search experiments , please use:
 ```
 cmd>>python retrainer_cifar.py    --save cifar10_retrain 
-                            --seed 2
-                            --batch_size 32
-                            --child_out_filters 40
-                            --data ../data/exp_data/AID_50
-                            --num_class 30
-                            --epochs 600
-                            --blocks "[2,2]"
-                            --arch "[[0, 1, 0, 4, 1, 3, 0, 3, 0, 3, 0, 0, 1, 1, 0, 3, 0, 3, 1, 0], [0, 3, 1, 0, 0, 4, 1, 1, 1, 1, 0, 3, 0, 2, 1, 2, 1, 1, 0, 3]]"
+                                  --seed 2
+                                  --batch_size 32
+                                  --child_out_filters 40
+                                  --data ../data/exp_data/AID_50
+                                  --num_class 30
+                                  --epochs 600
+                                  --blocks "[2,2]"
+                                  --arch "[[0, 1, 0, 4, 1, 3, 0, 3, 0, 3, 0, 0, 1, 1, 0, 3, 0, 3, 1, 0], [0, 3, 1, 0, 0, 4, 1, 1, 1, 1, 0, 3, 0, 2, 1, 2, 1, 1, 0, 3]]"
 ```
 ## scratch 
 ```
@@ -64,3 +75,5 @@ This implementation is based on
 - [MINGUKKANG](https://github.com/MINGUKKANG/ENAS-Tensorflow)
 - [adobe](https://github.com/adobe/antialiased-cnns)
 - [moskomule](https://github.com/moskomule/senet.pytorch)
+
+
