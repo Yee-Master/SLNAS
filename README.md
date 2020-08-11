@@ -58,6 +58,14 @@ cmd>>python train_search_cifar.py    --save cifa10_searcher
                                      --blocks "[2,2]"
                                      --weight_decay 3e-4
 ```
+## Result on cifar10
+| Tables  | parameters / M  | error rate / %| search cost / days|
+| :------:|:--------:|:-------------:|:-------------:|
+| ENAS    | 4.6      | 2.89          |0.45|
+| DARTS   | 3.3      |  2.76         |4|
+| NAO     | 2.5      |    2.93       |0.3|
+| SLNAS   | 1.31     |    2.86       |0.3|
+
 ## TODO
 
 - [ ] Search without label 
