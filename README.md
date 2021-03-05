@@ -32,7 +32,7 @@ Includes code for search and scratch.
 - apex 
 - numpy 
 
-## search 
+## retrain 
 
 Run  SLNAS search experiments , please use:
 ```
@@ -46,7 +46,7 @@ cmd>>python retrainer_cifar.py    --save cifar10_retrain
                                   --blocks "[2,2]"
                                   --arch "[[0, 1, 0, 4, 1, 3, 0, 3, 0, 3, 0, 0, 1, 1, 0, 3, 0, 3, 1, 0], [0, 3, 1, 0, 0, 4, 1, 1, 1, 1, 0, 3, 0, 2, 1, 2, 1, 1, 0, 3]]"
 ```
-## scratch 
+## search 
 ```
 cmd>>python train_search_cifar.py    --save cifa10_searcher
                                      --seed 0
